@@ -1,6 +1,8 @@
-def main():
-    print("Hello from llama-index-01!")
 
+from fastapi import FastAPI
 
-if __name__ == "__main__":
-    main()
+app = FastAPI()
+
+@app.get("/")
+async def root():
+    return {"message": "Hello from FastAPI (llama-index-01)!"}
