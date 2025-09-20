@@ -1,0 +1,13 @@
+[project]
+name = "llama-index-01"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "llama-index>=0.14.2",
+    "llama-index-embeddings-azure-openai>=0.4.1",
+    "llama-index-llms-azure-openai>=0.4.1",
+    "llama-index-readers-file>=0.5.4",
+    "llama-index-readers-web>=0.5.3",
+]
