@@ -2,8 +2,10 @@
 
 from fastapi import FastAPI
 
-from logger_setup import logger
+from logger_setup import get_logger
 from reader.web import create_index
+
+logger = get_logger()
 
 app = FastAPI()
 
@@ -19,5 +21,5 @@ if __name__ == "__main__":
     query_engine = index.as_query_engine()
     q = "Exiis Labについて教えて"
     response = query_engine.query(q)
-    logger.info(f"クエリ: {q}")
-    logger.info(f"クエリ実行結果: {response}")
+    logger.info("クエリ: %s", q)
+    logger.info("クエリ実行結果: %s", response)
