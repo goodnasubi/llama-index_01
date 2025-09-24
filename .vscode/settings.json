@@ -18,7 +18,7 @@
  "ruff.lint.preview": true,
  "ruff.format.preview": true,
  "ruff.format.backend": "uv",
- "ruff.configuration": "",
+ "ruff.configuration": "./pyproject.toml",
 
  "git.autofetch": true
 }
